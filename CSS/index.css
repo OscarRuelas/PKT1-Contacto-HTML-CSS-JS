@@ -1,0 +1,184 @@
+*{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.buscar{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #FCF6F5;
+    box-shadow: 1px 10px 26px -5px rgba(0,0,0,0.75);
+    width: 1423px;
+}
+
+.buscador{
+    background: none;
+    border-bottom: #0897ff solid 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 30rem;
+}
+
+.buscador:focus{
+    outline: none;
+    border-bottom: #2BAE66 solid;
+}
+
+.icono{
+    padding: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.icono i {
+    color: #0897ff;
+}
+
+.icono:hover {
+    color: #2BAE66;
+}
+
+.agregar{
+    position: absolute;
+}
+
+.tabla{
+    margin: 150px auto;
+    box-shadow: 1px 10px 26px -5px rgba(0,0,0,0.75);
+    padding: 2rem;
+    width: 1300px;
+}
+
+.tabla table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+thead{
+    background-color: #0897ff;
+    border-bottom: solid 3px #2BAE66;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+.acciones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.editar{
+    cursor: pointer;
+    background-color: #eae14b;
+    border: none;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.eliminar{
+    cursor: pointer;
+    background-color: #e3172e;
+    border: none;
+    padding: 15px;
+    border-radius: 1rem;
+}
+
+/* @media (max-width:730px) {
+    .buscar{
+        width: 42rem;
+    }
+}
+
+@media (max-width:576px) {
+    .buscar{
+        width: 42rem;
+    }
+}
+
+@media (max-width:320px) {
+    .buscar{
+        width: 42rem;
+    }
+} */
+
+.formulario{
+    margin: 150px auto;
+    padding: 2rem;
+    width: 1300px;
+    box-shadow: 1px 10px 26px -5px rgba(0,0,0,0.75);
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.form-floating{
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.acciones{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    background-color: #0897ff;
+    color: white;
+}
+
+.guardar{
+    width: 8rem;
+}
+
+.guardar:hover{
+    background-color: #2BAE66;
+    transition: background-color 1s;
+}
+
+.guardarCambios:hover{
+    background-color: #2BAE66;
+    transition: background-color 1s;
+}
+
+.cancelar{
+    width: 8rem;
+    display: flex;
+}
+
+.cancelar:hover{
+    background-color: #e3172e;
+    transition: background-color 1s;
+}
+
+/* validaciones */
+
+.iconoForm{
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 18rem;
+}
+
+.form-floating-correcto .form-floating-estatus{
+    color:#1ed12d;
+    opacity: 1;
+}
+
+.form-floating-incorrecto .form-floating-estatus{
+    color:#bb2929;
+    opacity: 1;
+    border: 3px solid #bb2929;
+}

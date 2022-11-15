@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Inicio</title>
+</head>
+
+<body class="contoiner">
+    <div class="buscar">
+        <div>
+            <input class="buscador" id="idinputbuscar" type="search" placeholder="Buscar contactos por nombre" />
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-contacto">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="alertaForm">
+        <div class="card formulario" id="contactos-form" autocapitalize="off">
+            <form id="contactosform">
+            <div class="form-floating mb-3" id="divnombre">
+                <input type="text" class="form-control" id="idnombre" name="nombre" placeholder="Teclear Nombre">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="nombre">Nombre*</label>
+            </div>
+            <div class="form-floating mb-3" id="divapp">
+                <input type="text" class="form-control" id="idapp" name="app" placeholder="Teclear Apellido Paterno">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="app">Apellido Paterno*</label>
+            </div>
+            <div class="form-floating mb-3" id="divapm">
+                <input type="text" class="form-control" id="idapm" name="apm" placeholder="Teclear Apellido Materno">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="apm">Apellido Materno</label>
+            </div>
+            <div class="form-floating mb-3" id="divcalle">
+                <input type="text" class="form-control" id="idcalle" name="calle" placeholder="Teclear Calle">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="calle">Calle*</label>
+            </div>
+            <div class="form-floating mb-3" id="divnum_int">
+                <input type="number" class="form-control" id="idnum_int" name="num_int" placeholder="Teclear número interior">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="num_int">Número Interior</label>
+            </div>
+            <div class="form-floating mb-3" id="divnum_ext">
+                <input type="number" class="form-control"id="idnum_ext" name="num_ext" placeholder="Teclear número exterior">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="num_ext">Número Exterior*</label>
+            </div>
+            <div class="form-floating mb-3" id="divcp">
+                <input type="number" class="form-control" id="idcp" name="cp" placeholder="Teclear Código Postal">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="cp">Código Postal*</label>
+            </div>
+            <div class="form-floating mb-3" id="divcolonia">
+                <input type="text" class="form-control" id="idcolonia" name="colonia" placeholder="Teclear Colonia">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="colonia">Colonia*</label>
+            </div>
+            <div class="form-floating mb-3" id="divtelefono">
+                <input type="number" class="form-control" id="idtelefono" name="telefono" placeholder="Teclear Teléfono">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="telefono">Teléfono*</label>
+            </div>
+            <div class="form-floating mb-3" id="divcorreo">
+                <input type="email" class="form-control" id="idcorreo" name="correo" placeholder="Teclear Correo">
+                <i class="form-floating-estatus iconoForm"></i>
+                <label for="correo">Correo</label>
+            </div>
+        </form>
+        <div class="acciones">
+            <button class="guardar" id="guardarc" value="Submit">Guardar</button>
+            <button disabled class="guardarCambios" id="guardarca" value="Submit">GuardarCambios</button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../JS/index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
